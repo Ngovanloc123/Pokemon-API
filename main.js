@@ -28,7 +28,7 @@ let all_pokemon_data = [];
 
 // Lấy dự liệu
 async function fetchPokemon() {
-    let response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=898")
+    let response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=500")
     let data = await response.json();
     let pokemon_links = data.results;
 
